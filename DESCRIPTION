@@ -1,0 +1,11 @@
+Package: myTestPackage
+Title: Comapares Student heights with their mean
+Version: 0.0.0.9000
+Authors@R: person("Michael", "Graber", email = "m.graber@lmu.campus.de", role = c("aut", "cre"))
+Description: Comapares Student heights with their mean  
+Depends: R (>= 3.3.1)
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr
+RoxygenNote: 6.0.1
