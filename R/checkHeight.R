@@ -12,7 +12,9 @@
 #' @return A dataframe with column names and mean height difference
 #' @author Jann Goschenhofer, Michael Graber
 #' @export
-#' @example
+#' @importFrom magrittr %>%
+#' @example checkHeight(students)
+
 checkHeight = function(students.input = students, sex.specific=TRUE){
 
   result.frame = data.frame(matrix(NA, nrow = nrow(students.input), ncol = 2))
