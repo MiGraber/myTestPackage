@@ -13,7 +13,6 @@
 #' @author Jann Goschenhofer, Michael Graber
 #' @export
 #' @importFrom magrittr %>%
-#' @example checkHeight(students)
 
 checkHeight = function(students.input = students, sex.specific=TRUE){
 

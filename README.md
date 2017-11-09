@@ -14,3 +14,8 @@ And one function:
 # Install the development version from GitHub
 devtools::install_github("MiGraber/myTestPackage")
 ```
+## Example
+
+```R
+checkHeight(students)
+```
