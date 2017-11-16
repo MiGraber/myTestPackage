@@ -2,9 +2,9 @@ Package: myTestPackage
 Title: Comapares Student heights with their mean
 Version: 0.0.0.9000
 Authors@R: person("Michael", "Graber", email = "m.graber@lmu.campus.de", role = c("aut", "cre"))
-Description: Comapares Student heights with their mean  
+Description: A small package made during a university curse. It provides a small dataset and only a few functions to calculate some mean over a dataframe.  
 Depends: R (>= 3.3.1)
-License: MIT
+License: GPL
 Encoding: UTF-8
 LazyData: true
 Imports: dplyr,magrittr, checkmate

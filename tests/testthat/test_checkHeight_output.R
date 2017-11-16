@@ -30,7 +30,7 @@ test_that("throw error if colums are missing in df", {
 
 
 students.height.as.char = students
-students.height.as.char$height = as.character(students.2$height)
+students.height.as.char$height = as.character(students$height)
 students.sex.as.char = students
 students.sex.as.char$sex = as.character(students.sex.as.char$sex)
 students.too.tall = students

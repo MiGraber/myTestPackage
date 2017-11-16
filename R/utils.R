@@ -2,6 +2,7 @@
 #'
 #' Calculates the arithmetic mean and round on the 3rd digit
 #' @param x a numeric vector
+#' @param digits integer indicating the number of decimal places
 #' @return an integer
 #' @author Michael Graber
 #'

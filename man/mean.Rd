@@ -8,6 +8,8 @@ mean(x, digits = 3L)
 }
 \arguments{
 \item{x}{a numeric vector}
+
+\item{digits}{integer indicating the number of decimal places}
 }
 \value{
 an integer
