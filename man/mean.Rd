@@ -4,7 +4,7 @@
 \alias{mean}
 \title{Calculates the arithmetic mean}
 \usage{
-mean(x)
+mean(x, digits = 3L)
 }
 \arguments{
 \item{x}{a numeric vector}
