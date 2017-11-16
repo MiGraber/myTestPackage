@@ -40,7 +40,7 @@ checkHeight <- function(students.input, sex.specific = TRUE, print.statement = F
                           } )
     #create the final dataframe containing name od the students and the height differnces
     #multiple height differences by 100 to get values in cm
-    result.frame = data.frame("name" = students.input$name, "sexspec_height_diff" = height_vector*100)
+    result.frame = data.frame("name" = students.input$name, "height_diff" = height_vector*100)
   } else{
     #calculate the mean height of the whole population
     mean_height = students.input[,"height"] %>% mean %>% as.numeric
@@ -54,10 +54,10 @@ checkHeight <- function(students.input, sex.specific = TRUE, print.statement = F
     #multiple height differences by 100 to get values in cm
     result.frame = data.frame("name" = students.input$name, "height_diff" = height_vector*100)
   }
-  #return the dataframe
-  return(result.frame)
   # Print a message
   if(print.statement == TRUE){
     print("Yippie, I calculated the mean differences!")
   }
+  #return the dataframe
+  return(result.frame)
 }
