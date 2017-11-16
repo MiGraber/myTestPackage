@@ -14,9 +14,15 @@
 #' @author Tobias Riebe, Michael Graber
 #' @export
 #' @importFrom magrittr %>%
+#' @import checkmate
 
 checkHeight <- function(students.input, sex.specific = TRUE, print.statement = FALSE){
-
+# Check input parameter
+  assertLogical(sex.specific)
+  assertLogical(print.statement)
+  assertDataFrame(students.input, types = c("numeric", "numeric", "numeric", "factor", "character"))
+  assertNumeric(students.input[,"height"], lower = 1.3, upper = 2.4)
+  assertFactor(students.input[,"sex"], levels = c("M", "F"))
 
   #Check if the sex specific height difference or the difference to the whole population should be calculated
   if(sex.specific == TRUE){
