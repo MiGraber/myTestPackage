@@ -7,6 +7,6 @@ Depends: R (>= 3.3.1)
 License: GPL
 Encoding: UTF-8
 LazyData: true
-Imports: dplyr,magrittr, checkmate
+Imports: magrittr, checkmate
 RoxygenNote: 6.0.1
 Suggests: testthat
