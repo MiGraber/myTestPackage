@@ -4,12 +4,14 @@
 \alias{checkHeight}
 \title{Return the height difference of the input dataframe withe the mean height of the dataframe}
 \usage{
-checkHeight(students.input = students, sex.specific = TRUE)
+checkHeight(students.input, sex.specific = TRUE, print.statement = FALSE)
 }
 \arguments{
 \item{students.input}{a dataframe with columns: names, heigth, sex}
 
 \item{sex.specific}{a boolean which indicates if the height difference is calculated sex specific}
+
+\item{print.statement}{a boolean; TRUE prints a message after calculation is done}
 }
 \value{
 A dataframe with column names and mean height difference
@@ -18,5 +20,5 @@ A dataframe with column names and mean height difference
 Return the height difference of the input dataframe withe the mean height of the dataframe.
 }
 \author{
-Jann Goschenhofer, Michael Graber
+Tobias Riebe, Michael Graber
 }

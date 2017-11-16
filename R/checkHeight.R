@@ -49,8 +49,9 @@ checkHeight <- function(students.input, sex.specific = TRUE, print.statement = F
     result.frame = data.frame("name" = students.input$name, "height_diff" = height_vector*100)
   }
   #return the dataframe
+  return(result.frame)
+  # Print a message
   if(print.statement == TRUE){
     print("Yippie, I calculated the mean differences!")
   }
-  return(result.frame)
 }
